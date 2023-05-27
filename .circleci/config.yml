@@ -22,7 +22,7 @@ jobs:
       - run:
           name: "run tests"
           command: .venv/bin/activate    	    	
-	           pytest -v --cov=calculator
+	          pytest -v --cov=calculator
 		    	
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
