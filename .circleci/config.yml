@@ -9,7 +9,7 @@ jobs:
     # Specify the execution environment. You can specify an image from Docker Hub or use one of our convenience images from CircleCI's Developer Hub.
     # See: https://circleci.com/docs/configuration-reference/#executor-job
     docker:
-      - image: circleci/python:3.10
+      - image: circleci/python:3.10.6
     # Add steps to the job
     # See: https://circleci.com/docs/configuration-reference/#steps
     steps:
@@ -24,7 +24,7 @@ jobs:
           name: "run tests"
           command:  |
             . venv/bin/activate    	    	
-	    pytest -v --cov = calculator
+	    pytest -v --cov=calculator
 		    	
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
